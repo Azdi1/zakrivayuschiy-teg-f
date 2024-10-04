@@ -1,1 +1,26 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+
+:root {
+  --second-family: "PressStart2P-Regular", sans-serif;
+  --font-family: "Inter", sans-serif;
+  --text-color: #000;
+  --border-color: #000;
+  --backgraund-color: #fff;
+  --padding-conteiner: clamp(0rem, -8.2528rem + 35.2120vw, 23rem);
+  --gradient-1: #d3d3d3;
+  --gradient-2: #e7e7e7;
+  --gradient-3: #1a1a1a;
+  --shadow: rgba(0, 0, 0, 0.25);
+  --svg-like-icon: #000;
+  --like-contour: #000;
+  /* --gradient-1: repeating-linear-gradient(to right, var(--gradient-1, #d3d3d3) 2px 4px, transparent 4px 6px);
+  --gradient-2: repeating-linear-gradient(180deg, var(--gradient-2, #e7e7e7) 0%, var(--gradient-3, #1a1a1a) 100%); */
+  
+  --header-padding-inline: clamp(0rem, -2.4615rem + 14.2357vw, 4rem);
+  --header-padding-block: ;
+  --font-size-h1: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
+  --font-size-h2: clamp(0.875rem, 0.5449rem + 1.4085vw, 1.8125rem);
+  --background-img: repeating-linear-gradient(to right, var(--gradient-1, #d3d3d3) 0px 2px, transparent 2px 4px),
+  repeating-linear-gradient(to bottom, var(--gradient-1, #d3d3d3) 0px 2px, transparent 2px 4px),
+  linear-gradient(to bottom, var(--gradient-2, #e7e7e7) 0.01%, var(--gradient-3, #1a1a1a) 100%);
+}
