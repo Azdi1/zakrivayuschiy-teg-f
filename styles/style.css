@@ -102,6 +102,7 @@
 
 .card__title {
   padding: 5px 10px;
+  font-weight: var(--font-card-weight);
 }
 
 .overlay__box {
@@ -132,6 +133,7 @@
 
 .card__text {
   font-family: var(--font-family);
+  font-weight: var(--text-card-weight);
   font-size: 18px;
   line-height: 117%;
 }
@@ -165,23 +167,23 @@
   cursor: pointer;
 }
 
-/* .core {
+.like__icon .core {
   fill: transparent;
 }
 
-.main-body {
+.like__icon .main-body {
   fill: transparent;
-} */
+}
 
-.card__icon-button:hover {
+.like__icon:hover {
     
   & .core {
-    fill: #FF0000;
+    fill: #000;
     transition: fill 0.3s 0.03s;
   }
   
   & .main-body {
-    fill: #FF0000;
+    fill: #000;
     transition: fill 0.5s 0.03s;
   }
 } 

@@ -13,8 +13,9 @@
   --shadow: rgba(0, 0, 0, 0.25);
   --svg-like-icon: #000;
   --like-contour: #000;
-  /* --gradient-1: repeating-linear-gradient(to right, var(--gradient-1, #d3d3d3) 2px 4px, transparent 4px 6px);
-  --gradient-2: repeating-linear-gradient(180deg, var(--gradient-2, #e7e7e7) 0%, var(--gradient-3, #1a1a1a) 100%); */
+  --font-card-weight: 700;
+  --text-card-weight: 400;
+  
   
   --header-padding-inline: clamp(0rem, -2.4615rem + 14.2357vw, 4rem);
   --header-padding-block: ;
