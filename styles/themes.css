@@ -6,7 +6,7 @@
 */
 
 :root.theme-dark {
-  --second-family: "PressStart2P-Regular", sans-serif;
+  --second-family: "PressStart2P", fantasy;
   --font-family: "Inter-Variable", sans-serif;
   --text-color: #00cc14;
   --border-color: #00cc14;
@@ -31,7 +31,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --second-family: "PressStart2P-Regular", sans-serif;
+    --second-family: "PressStart2P", fantasy;
     --font-family: "Inter-Variable", sans-serif;
     --text-color: #00cc14;
     --border-color: #00cc14;
@@ -56,7 +56,7 @@
 }
 
 :root.theme-light {
-  --second-family: "PressStart2P-Regular", sans-serif;
+  --second-family: "PressStart2P", fantasy;
   --font-family: "Inter-Variable", sans-serif;
   --text-color: #000;
   --border-color: #000;
@@ -80,7 +80,7 @@
 
 @media (prefers-color-scheme: light) {
   :root {
-    --second-family: "PressStart2P-Regular", sans-serif;
+    --second-family: "PressStart2P", fantasy;
     --font-family: "Inter-Variable", sans-serif;
     --text-color: #000;
     --border-color: #000;

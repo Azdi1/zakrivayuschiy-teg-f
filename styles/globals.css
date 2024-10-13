@@ -34,10 +34,10 @@ a {
 
 button,
 input {
+  padding-inline: 0;
   color: currentColor;
   font-family: inherit;
   font-size: inherit;
-  padding-inline: 0;
 }
 
 ul,
