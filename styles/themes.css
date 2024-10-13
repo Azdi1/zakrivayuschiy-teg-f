@@ -75,9 +75,10 @@
   --bg-color-bt: #000;
   --bg-svg-floppy: #fff;
   --shadow-button-focus: #000;
+  --color-bt: #fff;
 }
 
-/* @media (prefers-color-scheme: light) {
+@media (prefers-color-scheme: light) {
   :root {
     --second-family: "PressStart2P-Regular", sans-serif;
     --font-family: "Inter-Variable", sans-serif;
@@ -99,4 +100,4 @@
     --bg-svg-floppy: #fff;
     --shadow-button-focus: #000;
   }
-} */
+}

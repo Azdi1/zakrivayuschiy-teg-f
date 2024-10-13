@@ -18,7 +18,7 @@
   display: flex;
   flex-direction: column;
   gap: 99px;
-  border: 1px solid var(--border-color, #000);
+  /* border: 1px solid var(--border-color, #000); */
   padding-inline: var(--padding-conteiner);
   padding-block: 106px 103px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
@@ -149,6 +149,7 @@
 
 .overlay__box {
   position: relative;
+  border-block: 2px solid var(--border-color);
 }
 
 .card__img {
@@ -213,7 +214,7 @@
 .card__text-button {
   padding: 25px;
   display: flex;
-  gap: 26px;
+  gap: 21px;
   flex-direction: column;
 }
 
@@ -232,8 +233,8 @@
 .card__button {
   display: flex;
   justify-content: flex-end;
-  align-items: flex-end;
-  gap: 6px;
+  /* align-items: flex-end; */
+  gap: 12px;
 }
 
 .card__icon-button {
@@ -241,12 +242,16 @@
   background-color: transparent;
   cursor: pointer;
   display: flex;
-  justify-content: center;
-  max-block-size: 38px;
+  align-items: center;
+  height: 38px;
   appearance: none;
 
   &:focus {
     outline: none;
+  }
+
+  &:focus-visible {
+    border: 2px solid var(--border-color);
   }
 }
 
@@ -290,10 +295,10 @@
   /* line-height: 90%; */
   background-color: var(--backgraund-color);
   cursor: pointer;
-  /* display: flex; */
+  display: flex;
   color: var(--color-bt);
   min-width: 131px;
-  /* justify-content: center; */
+  justify-content: center;
 
   &:focus {
     outline: none;
@@ -322,6 +327,7 @@
 
 .button__text {
   color: var(--color-bt);
+  /* color: #fff; */
   mix-blend-mode: difference;
   z-index: 1;
   font-size: 14px;
@@ -353,6 +359,10 @@
     fill: red;
     transition: fill 0.3s 0.05s;
   }
+}
+
+.like-icon {
+  display: flex;
 }
 
 .like-icon.is-liked .core {
@@ -422,7 +432,11 @@
 
 @media (width <= 375px) {
   .page {
-    padding-block: 99px 0px;
+    padding-block: 100px 0px;
+  }
+
+  .content__section {
+    gap: 52px;
   }
 
   .header {
