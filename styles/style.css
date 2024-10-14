@@ -17,11 +17,9 @@
 .page {
   display: flex;
   flex-direction: column;
-  gap: 99px;
-  /* border: 1px solid var(--border-color, #000); */
+  /* gap: 99px; */
   padding-inline: var(--padding-conteiner);
   padding-block: 100px 103px;
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   color: var(--text-color);
   font-family: var(--font-family sans-serif), "IBM Plex mono", Helvetica, Arial,
     sans-serif;
@@ -48,6 +46,7 @@
   font-family: var(--second-family, sans-serif);
   text-transform: uppercase;
   background-color: var(--backgraund-color, #fff);
+  margin-bottom: 99px;
 }
 
 .header__logo {
@@ -329,7 +328,8 @@
 
   & .main-body {
     fill: var(--main-body-svg-like);
-    transition: fill 0.5s linear;
+    transition: fill 0.3s linear;
+    transition-delay: 0.05s;
   }
 }
 
@@ -371,6 +371,7 @@
 
 .like-icon.is-liked .sparks {
   animation: sparks-heart 0.3s ease-in 0.3s 1;
+  animation-direction: alternate;
 }
 
 /* animation heart */
@@ -380,6 +381,7 @@
   mix-blend-mode: difference;
 }
 
+
 .button-dialog {
   padding: 9px 17px;
 }
@@ -388,11 +390,9 @@
   text-transform: uppercase;
 }
 
-.dialog {
-  position: fixed;
-  bottom: 45px;
+.dialog-title {
+  text-transform: uppercase;
 }
-
 .dialog::backdrop {
   opacity: 0.75;
   background: #000;
@@ -465,7 +465,7 @@
     text-transform: lowercase;
   }
 
-  .dialog {
+  /* .dialog {
     top: 144px;
-  }
+  } */
 }
